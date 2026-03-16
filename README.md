@@ -9,7 +9,7 @@ Screen Reader NVDA Addon - unicode-braille-input-for-kantenji
 
 使用する場合、何らかの不具合があるかもしれません。
 
-事故責任で使用してください。
+自己責任で使用してください。
 
 ## 何をするものか
 
