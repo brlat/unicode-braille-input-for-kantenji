@@ -1,2 +1,29 @@
-# unicode-braille-input-for-kantenji
-Screen Reader NVDA Addon for inputing Unicode Braille with numbers through 0 to 7 according to the dot numbering system of Japanese Kanji Braille.
+# スクリーンリーダーNVDA アドオン「漢点字用ユニコード点字入力」
+Screen Reader NVDA Addon - unicode-braille-input-for-kantenji
+
+## *注意*
+
+これは Claude Codeで作成したNVDAアドオンです。
+
+私はNVDAアドオン作成についても、Pythonについてもほとんど知識がなく、Claude Codeにプロンプトで作成してもらったものです。
+
+使用する場合、何らかの不具合があるかもしれません。
+
+事故責任で使用してください。
+
+## 何をするものか
+
+このアドオンは私が漢点字(8点漢字)について説明する文章を書くときに必要で作成したものです。
+
+点字の点の番号でユニコード点字を入力できるようにするものです。
+
+そのようなアドオンはすでに「Unicode Braille Input」というものがNVDAのアドオンストアから入手可能ですが、通常のユニコードの点の番号の付け方と、漢点字での番号の付け方が異なるため、これを作成しました。
+
+通常の点字は6点で構成されていますが、ユニコード点字では、この6点の「下」にもう2点追加の点があり、左下が7の点、右下が8の点というように番号が付いています。
+
+これに対して漢点字では、通常の6点の「上」に2点を追加しているため、ユニコード点字の番号の付け方とずれてしまいます。
+
+また上に追加した2点の番号を、左上を「0の点」、右上を「7の点」としています。
+
+
+

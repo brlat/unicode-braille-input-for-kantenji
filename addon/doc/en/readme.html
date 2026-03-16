@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>数字点字入力 (Numeric Braille Input)</title>
+</head>
+<body>
+<h1>数字点字入力 (Numeric Braille Input)</h1>
+<p>このアドオンは、数字0〜7を入力してユニコード点字文字(U+2800〜U+28FF)を出力します。</p>
+
+<h2>点のマッピング</h2>
+<p>このアドオンでは標準的な点字番号と異なる配置を使用します。</p>
+<table border="1">
+  <caption>点字セルのレイアウト</caption>
+  <tr>
+    <th>左列</th>
+    <th>右列</th>
+  </tr>
+  <tr>
+    <td>0 (点1・左上)</td>
+    <td>7 (点4・右上)</td>
+  </tr>
+  <tr>
+    <td>1 (点2・左2番目)</td>
+    <td>4 (点5・右2番目)</td>
+  </tr>
+  <tr>
+    <td>2 (点3・左3番目)</td>
+    <td>5 (点6・右3番目)</td>
+  </tr>
+  <tr>
+    <td>3 (点7・左下)</td>
+    <td>6 (点8・右下)</td>
+  </tr>
+</table>
+
+<h2>使い方</h2>
+<ol>
+  <li><kbd>NVDA+Shift+B</kbd> を押して数字点字入力モードをオンにします。</li>
+  <li>数字キー <kbd>0</kbd>〜<kbd>7</kbd> を押して点をトグルします。同じキーを再度押すと点がオフになります。</li>
+  <li><kbd>スペース</kbd> を押すと、選択した点に対応するユニコード点字文字がカーソル位置に挿入されます。</li>
+  <li><kbd>Escape</kbd> を押すと入力をキャンセルして点をクリアします(文字は挿入されません)。</li>
+  <li>再度 <kbd>NVDA+Shift+B</kbd> を押すとモードをオフにします。</li>
+</ol>
+
+<h2>例</h2>
+<ul>
+  <li>点1と点2(左上と左2番目)→ <kbd>0</kbd>、<kbd>1</kbd>、<kbd>スペース</kbd> → ⠃</li>
+  <li>全ての点 → <kbd>0</kbd><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><kbd>4</kbd><kbd>5</kbd><kbd>6</kbd><kbd>7</kbd>、<kbd>スペース</kbd> → ⣿</li>
+  <li>点なし(空白点字) → そのまま <kbd>スペース</kbd> → ⠀</li>
+</ul>
+
+<h2>動作環境</h2>
+<p>NVDA 2021.1 以降</p>
+</body>
+</html>
